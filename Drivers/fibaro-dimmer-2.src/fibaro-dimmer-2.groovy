@@ -732,6 +732,15 @@ Default: 1
     </Help>
         <Item label="Off" value="0" />
         <Item label="Previous State" value="1" />
+  </Value>  
+  <Value type="byte" byteSize="1" index="13" label="Force auto-calibration" min="0" max="2" value="0" setting_type="zwave" fw="3.08">
+    <Help>
+Changing  value  of  this  parameter  will  force  the  calibration  process.  During  the  calibration  parameter  is  set  to  1  or  2  and  switched  to  0  upon completion. 
+Default: 0
+    </Help>
+    <Item label="0: readout" value="0" />
+    <Item label="1: force  auto-calibration without Bypass" value="1" />
+    <Item label="1: force  auto-calibration with Bypass" value="2" />
   </Value>
   <Value type="short" byteSize="2" index="10" label="Timer functionality (auto - off)" min="0" max="32767" value="0" setting_type="zwave" fw="">
     <Help>
